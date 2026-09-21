@@ -3,8 +3,7 @@ cask "duofx" do
   version "0.4.0"
   sha256 "03eeba8a5fbdc3a3398dacd7f3a13749fe9a795ce01c99b6248f5146fb2b25b0"
 
-  url "https://github.com/amjadjibon/DuoFX/releases/download/v#{version}/DuoFX-v#{version}-arm64.dmg",
-      verified: "github.com/amjadjibon/DuoFX/"
+  url "https://github.com/amjadjibon/DuoFX/releases/download/v#{version}/DuoFX-v#{version}-arm64.dmg"
   name "DuoFX"
   desc "Menu-bar app that animates the desktop as the MacBook lid closes"
   homepage "https://duofx.amjadjibon.com/"

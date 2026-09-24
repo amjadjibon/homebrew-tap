@@ -49,9 +49,9 @@ choose **Open Anyway**. Only the first launch needs this.
 This does not apply to `snaptext`: a formula installs a bare binary that
 Homebrew fetches with `curl`, which never sets the quarantine flag.
 
-## Opening TokenBar 0.0.2 the first time
+## Opening TokenBar the first time
 
-TokenBar 0.0.2 is a prerelease signed with an Apple Development certificate and
+TokenBar's current release is signed with an Apple Development certificate and
 is not notarized. After installing its cask, remove the quarantine attribute
 before opening the app:
 

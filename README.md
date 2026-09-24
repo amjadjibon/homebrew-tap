@@ -7,6 +7,7 @@ Homebrew formulae and casks for [amjadjibon](https://github.com/amjadjibon)'s to
 ```bash
 brew install amjadjibon/tap/snaptext
 brew install --cask amjadjibon/tap/duofx
+brew install --cask amjadjibon/tap/tokenbar
 ```
 
 Or tap once and install by name afterwards:
@@ -15,6 +16,7 @@ Or tap once and install by name afterwards:
 brew tap amjadjibon/tap
 brew install snaptext
 brew install --cask duofx
+brew install --cask tokenbar
 ```
 
 ## Formulae
@@ -28,6 +30,7 @@ brew install --cask duofx
 | Cask | Description |
 | --- | --- |
 | [duofx](https://github.com/amjadjibon/DuoFX) | Menu-bar app that animates the desktop as the MacBook lid closes |
+| [tokenbar](https://github.com/amjadjibon/TokenBar) | Menu-bar app for AI subscription quota usage |
 
 ## Opening DuoFX the first time
 
@@ -46,12 +49,25 @@ choose **Open Anyway**. Only the first launch needs this.
 This does not apply to `snaptext`: a formula installs a bare binary that
 Homebrew fetches with `curl`, which never sets the quarantine flag.
 
+## Opening TokenBar 0.0.2 the first time
+
+TokenBar 0.0.2 is a prerelease signed with an Apple Development certificate and
+is not notarized. After installing its cask, remove the quarantine attribute
+before opening the app:
+
+```bash
+xattr -dr com.apple.quarantine /Applications/TokenBar.app
+```
+
+TokenBar requires macOS 26.5 or later.
+
 ## Upgrade
 
 ```bash
 brew update
 brew upgrade snaptext
 brew upgrade --cask duofx
+brew upgrade --cask tokenbar
 ```
 
 ## Uninstall
@@ -59,6 +75,7 @@ brew upgrade --cask duofx
 ```bash
 brew uninstall snaptext
 brew uninstall --cask duofx
+brew uninstall --cask tokenbar
 brew untap amjadjibon/tap
 ```
 

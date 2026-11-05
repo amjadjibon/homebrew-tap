@@ -8,6 +8,7 @@ Homebrew formulae and casks for [amjadjibon](https://github.com/amjadjibon)'s to
 brew install amjadjibon/tap/snaptext
 brew install --cask amjadjibon/tap/duofx
 brew install --cask amjadjibon/tap/tokenbar
+brew install --cask amjadjibon/tap/memsh
 ```
 
 Or tap once and install by name afterwards:
@@ -17,6 +18,7 @@ brew tap amjadjibon/tap
 brew install snaptext
 brew install --cask duofx
 brew install --cask tokenbar
+brew install --cask memsh
 ```
 
 ## Formulae
@@ -31,6 +33,7 @@ brew install --cask tokenbar
 | --- | --- |
 | [duofx](https://github.com/amjadjibon/DuoFX) | Menu-bar app that animates the desktop as the MacBook lid closes |
 | [tokenbar](https://github.com/amjadjibon/TokenBar) | Menu-bar app for AI subscription quota usage |
+| [memsh](https://github.com/amjadjibon/memsh) | Virtual bash shell with an in-memory filesystem (macOS and Linux) |
 
 ## Opening DuoFX the first time
 

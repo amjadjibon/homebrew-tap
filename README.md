@@ -6,6 +6,7 @@ Homebrew formulae and casks for [amjadjibon](https://github.com/amjadjibon)'s to
 
 ```bash
 brew install amjadjibon/tap/snaptext
+brew install amjadjibon/tap/tinystack
 brew install --cask amjadjibon/tap/duofx
 brew install --cask amjadjibon/tap/tokenbar
 brew install --cask amjadjibon/tap/memsh
@@ -16,6 +17,7 @@ Or tap once and install by name afterwards:
 ```bash
 brew tap amjadjibon/tap
 brew install snaptext
+brew install tinystack
 brew install --cask duofx
 brew install --cask tokenbar
 brew install --cask memsh
@@ -26,6 +28,7 @@ brew install --cask memsh
 | Formula | Description |
 | --- | --- |
 | [snaptext](https://github.com/amjadjibon/snaptext) | Local OCR for macOS: read text from images, the clipboard, or the screen |
+| [tinystack](https://github.com/amjadjibon/tinystack) | Local AWS service emulator in a single binary, with a web console (macOS and Linux) |
 
 ## Casks
 
@@ -49,7 +52,7 @@ xattr -dr com.apple.quarantine /Applications/DuoFX.app
 Or open **System Settings → Privacy & Security** after the failed launch and
 choose **Open Anyway**. Only the first launch needs this.
 
-This does not apply to `snaptext`: a formula installs a bare binary that
+This does not apply to `snaptext` or `tinystack`: a formula installs a bare binary that
 Homebrew fetches with `curl`, which never sets the quarantine flag.
 
 ## Opening TokenBar the first time
@@ -69,16 +72,20 @@ TokenBar requires macOS 26.5 or later.
 ```bash
 brew update
 brew upgrade snaptext
+brew upgrade tinystack
 brew upgrade --cask duofx
 brew upgrade --cask tokenbar
+brew upgrade --cask memsh
 ```
 
 ## Uninstall
 
 ```bash
 brew uninstall snaptext
+brew uninstall tinystack
 brew uninstall --cask duofx
 brew uninstall --cask tokenbar
+brew uninstall --cask memsh
 brew untap amjadjibon/tap
 ```
 
